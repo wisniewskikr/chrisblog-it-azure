@@ -26,6 +26,33 @@ This project presents:
 * How to deploy **Java Spring Boot** application using **Azure App Services Deployment Center** from **Github** repository. Code from Github is deployed in Azure by **Github Actions** which are automatically created and deployed on Github during this deployment.
 * How to remove all Azure Resources after work.
 
+##### Flow
+The following flow takes place in this project:
+1. User via any browser sends request to application for a content.
+1. Application HelloWorld returns response with JSON containing message, port and UUID. This response is presented to User via browser.
+
+##### Launch
+To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
+
+##### Technologies
+This project uses following technologies:
+* **Java**: `https://docs.google.com/document/d/119VYxF8JIZIUSk7JjwEPNX1RVjHBGbXHBKuK_1ytJg4/edit?usp=sharing`
+* **Maven**: `https://docs.google.com/document/d/1cfIMcqkWlobUfVfTLQp7ixqEcOtoTR8X6OGo3cU4maw/edit?usp=sharing`
+* **Git**: `https://docs.google.com/document/d/1Iyxy5DYfsrEZK5fxZJnYy5a1saARxd5LyMEscJKSHn0/edit?usp=sharing`
+* **Spring Boot**: `https://docs.google.com/document/d/1mvrJT5clbkr9yTj-AQ7YOXcqr2eHSEw2J8n9BMZIZKY/edit?usp=sharing`
+* **Microsoft Azure**: `https://docs.google.com/document/d/1HaL4gve9FyrSS2Zi7NrhHN4Y2siD_sXJugnOuGhjhCc/edit?usp=sharing`
+
+
+PRECONDITIONS
+-------------
+
+##### Preconditions - Tools
+* Installed **Operating System** (tested on Windows 10)
+
+##### Preconditions - Actions
+* Created Azure account
+* Java Spring Boot application deployed on Github. Link: `https://github.com/wisniewskikr/java-springboot-helloworld`
+
 
 CREATE RESOURCE GROUP
 ---------------------
