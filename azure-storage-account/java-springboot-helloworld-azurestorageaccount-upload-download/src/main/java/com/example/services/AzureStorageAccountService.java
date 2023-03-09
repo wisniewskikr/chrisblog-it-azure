@@ -43,5 +43,22 @@ public class AzureStorageAccountService {
         return list;
         
     }
+	
+	public void uploadFile(String fileName, InputStream content, long length) {
+		
+        BlobClient client = containerClient().getBlobClient(fileName);
+        client.upload(content, length);
+
+    }
+	
+	public ByteArrayOutputStream downloadFile(String fileName) {
+		
+        BlobContainerClient containerClient = containerClient();
+        BlobClient blobClient = containerClient.getBlobClient(fileName);
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        blobClient.downloadStream(os);
+        return os;
+        
+    }
 
 }
