@@ -117,15 +117,27 @@ DELETE SQL DATABASE
 Link:
 * https://portal.azure.com/
 
-![My Image](readme-images/delete-aks-01.png)
+![My Image](readme-images/delete-sql-databases-01.png)
 
-![My Image](readme-images/delete-aks-02.png)
+![My Image](readme-images/delete-sql-databases-02.png)
 
-![My Image](readme-images/delete-aks-03.png)
+![My Image](readme-images/delete-sql-databases-03.png)
 
-![My Image](readme-images/delete-aks-04.png)
+![My Image](readme-images/delete-sql-databases-04.png)
 
-![My Image](readme-images/delete-aks-05.png)
+![My Image](readme-images/delete-sql-databases-05.png)
+
+![My Image](readme-images/delete-sql-databases-06.png)
+
+![My Image](readme-images/delete-sql-databases-07.png)
+
+![My Image](readme-images/delete-sql-databases-08.png)
+
+![My Image](readme-images/delete-sql-databases-09.png)
+
+![My Image](readme-images/delete-sql-databases-10.png)
+
+![My Image](readme-images/delete-sql-databases-11.png)
 
 
 DELETE RESOURCE GROUP
