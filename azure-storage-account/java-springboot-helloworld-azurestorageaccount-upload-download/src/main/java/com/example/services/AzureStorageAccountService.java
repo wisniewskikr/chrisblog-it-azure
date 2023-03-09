@@ -44,10 +44,10 @@ public class AzureStorageAccountService {
         
     }
 	
-	public void uploadFile(String fileName, InputStream content, long length) {
+	public void uploadFile(String fileName, InputStream is, long length) {
 		
         BlobClient client = containerClient().getBlobClient(fileName);
-        client.upload(content, length);
+        client.upload(is, length, true);
 
     }
 	

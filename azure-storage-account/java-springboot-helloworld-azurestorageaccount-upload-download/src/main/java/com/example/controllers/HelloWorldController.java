@@ -1,6 +1,9 @@
 package com.example.controllers;
 
-import java.util.List;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,16 +29,16 @@ public class HelloWorldController {
 
 
 	@RequestMapping(value="/")
-	public HelloWorldJson helloWorld() {
+	public HelloWorldJson helloWorld() throws FileNotFoundException {
 		
-		List<String> listFiles = azureStorageAccountService.listFiles();
-		for (String file : listFiles) {
-			System.out.println(file);
-		}
+		File file = new File(getClass().getClassLoader().getResource("helloworld.txt").getFile());
+		azureStorageAccountService.uploadFile(file.getName(), new FileInputStream(file), file.length());
+		ByteArrayOutputStream baos = azureStorageAccountService.downloadFile(file.getName());
+		String message = baos.toString();
 		
-		logger.info("Application was called with message: {}", "null");
+		logger.info("Application was called with message: {}", message);
 		
-		return new HelloWorldJson(null);
+		return new HelloWorldJson(message);
 		
 	}
 	
