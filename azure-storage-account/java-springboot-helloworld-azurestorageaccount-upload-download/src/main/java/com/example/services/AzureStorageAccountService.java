@@ -60,5 +60,12 @@ public class AzureStorageAccountService {
         return os;
         
     }
+	
+	public void deleteFile(String fileName) {
+		
+        BlobClient client = containerClient().getBlobClient(fileName);
+        client.deleteIfExists();
+
+    }
 
 }
