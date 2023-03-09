@@ -22,6 +22,7 @@ DESCRIPTION
 The goal of this project is to present how to upload and download files from and to **Microsoft Azure Storage Account** using **Java Spring Boot** application. Terminology explanation:
 * **Azure Platform**: this is web console for Azure Resources. Using this console user can work with Azure Resources via browser
 * **Azure Storage Account**: it's service provided by Azure for storing files in the Azure Cloud
+* **Java Spring Boot application**: application in Java programming language which uses Spring Boot framework. This application uploads file **src/main/resources/helloworld.txt** to Azure Cloud then download this file and reads text from this file. At the and file is deleted from Azure Cloud and the text is displayed as result message. 
 
 ##### Flow
 The following flow takes place in this project:
@@ -98,12 +99,6 @@ Link:
 
 ![My Image](readme-images/create-storage-account-10.png)
 
-![My Image](readme-images/create-storage-account-11.png)
-
-![My Image](readme-images/create-storage-account-12.png)
-
-![My Image](readme-images/create-storage-account-13.png)
-
 
 DELETE STORAGE ACCOUNT
 ----------------------
@@ -111,13 +106,13 @@ DELETE STORAGE ACCOUNT
 Link:
 * https://portal.azure.com/
 
-![My Image](readme-images/delete-storage-account01.png)
+![My Image](readme-images/delete-storage-account-01.png)
 
-![My Image](readme-images/delete-storage-account02.png)
+![My Image](readme-images/delete-storage-account-02.png)
 
-![My Image](readme-images/delete-storage-account03.png)
+![My Image](readme-images/delete-storage-account-03.png)
 
-![My Image](readme-images/delete-storage-account04.png)
+![My Image](readme-images/delete-storage-account-04.png)
 
 
 DELETE RESOURCE GROUP
